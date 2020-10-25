@@ -4,7 +4,7 @@ The project is a microservice that has the responsibility of retrieving all flig
 
 # Implementation
 
-The project contains swagger to explain api.
+The project contains swagger to explain api as : /swagger-ui.html
 
 spring security in-memory is included with user,password and roles as following:
 
@@ -25,5 +25,6 @@ mvn clean package
 
 ## Build containers and run:
 docker-compose build
+
 docker-compose up
 
