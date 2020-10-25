@@ -25,7 +25,6 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
  *
  */
 @Configuration
-//@EnableGlobalAuthentication()
 @EnableWebSecurity()
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
@@ -33,8 +32,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
     @Override
     public UserDetailsService userDetailsService() {
         List<UserDetails> users = new ArrayList<>();
-        users.add(User.withDefaultPasswordEncoder().username("fpmoles").password("password").roles("USER", "ADMIN").build());
-        users.add(User.withDefaultPasswordEncoder().username("jdoe").password("foobar").roles("USER").build());
+        users.add(User.withDefaultPasswordEncoder().username("akram").password("password").roles("USER", "ADMIN").build());
+        users.add(User.withDefaultPasswordEncoder().username("test").password("test").roles("USER").build());
         return new InMemoryUserDetailsManager(users);
     }
 
